@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://dubbo.apache.org/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+         http://dubbo.apache.org/schema/dubbo http://dubbo.apache.org/schema/dubbo/dubbo.xsd
+        ">
+
+<!--   为 dubbo 服务命名 -->
+    <dubbo:application name="dubbo-provider"/>
+<!--    把服务注册到注册中心-->
+    <dubbo:registry address="zookeeper://127.0.0.1:2181" protocol="zookeeper"/>
+<!--    暴露服务的协议-->
+    <dubbo:protocol name="dubbo" port="20880"/>
+
+<!--    配置 dubbo provider 服务-->
+    <dubbo:service interface="com.tomgao.api.HelloService" ref="helloServiceImpl"/>
+</beans>
