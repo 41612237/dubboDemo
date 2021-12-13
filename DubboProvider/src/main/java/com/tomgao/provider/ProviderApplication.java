@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ImportResource;
 
 @SpringBootApplication
-//@EnableDubbo // 扫描所有dubbo 提供的注解
+@EnableDubbo // 扫描所有dubbo 提供的注解
 //@ImportResource(locations = "classpath:dubbo/provider.xml")
 public class ProviderApplication {
 

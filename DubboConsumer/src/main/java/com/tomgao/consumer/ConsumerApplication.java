@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ImportResource;
 
 @SpringBootApplication
-//@EnableDubbo
+@EnableDubbo
 //@ImportResource("classpath:dubbo/consumer.xml")
 public class ConsumerApplication {
 
