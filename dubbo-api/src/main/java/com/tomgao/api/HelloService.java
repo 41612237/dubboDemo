@@ -1,5 +1,7 @@
 package com.tomgao.api;
 
+import java.util.concurrent.CompletableFuture;
+
 /**
  * @author tomgao
  * @Description
@@ -8,4 +10,7 @@ package com.tomgao.api;
 public interface HelloService {
 
     String sayHello(String name);
+
+    CompletableFuture<String> byeDubbo(String name);
+
 }

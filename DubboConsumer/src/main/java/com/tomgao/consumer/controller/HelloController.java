@@ -5,6 +5,8 @@ import org.apache.dubbo.config.annotation.Reference;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.concurrent.CompletableFuture;
+
 /**
  * @author tomgao
  * @Description
@@ -25,5 +27,20 @@ public class HelloController {
         String hello = helloService.sayHello("tomgao");
         System.out.println(hello);
         return hello;
+    }
+
+
+    @RequestMapping("/bye")
+    public void byeDubbo() {
+        CompletableFuture<String> future = helloService.byeDubbo("tomgaooo");
+        future.whenComplete( (v, t) -> {
+            if (t != null) {
+                t.printStackTrace();
+            } else {
+                System.out.println("Response: " + v);
+            }
+        });
+
+        System.out.println("Executed before response return.");
     }
 }
