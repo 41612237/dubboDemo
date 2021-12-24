@@ -10,7 +10,7 @@
 // * @Description
 // * @date 2021/12/10
 // */
-////@Configuration
+//@Configuration
 //public class DubboConsumerConfig {
 //
 //    @Bean
