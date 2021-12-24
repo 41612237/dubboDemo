@@ -7,10 +7,10 @@
         ">
 
     <!--   为 dubbo 服务命名 -->
-    <dubbo:application name="dubbo-consumer"/>
-    <!--    把服务注册到注册中心-->
-    <dubbo:registry address="zookeeper://127.0.0.1:2181" protocol="zookeeper"/>
+<!--    <dubbo:application name="dubbo-consumer"/>-->
+<!--    &lt;!&ndash;    把服务注册到注册中心&ndash;&gt;-->
+<!--    <dubbo:registry address="zookeeper://127.0.0.1:2181" protocol="zookeeper"/>-->
 
-    <!--    配置 dubbo provider 服务-->
-    <dubbo:reference id="helloServiceImpl" interface="com.tomgao.api.HelloService"/>
+<!--    &lt;!&ndash;    配置 dubbo provider 服务&ndash;&gt;-->
+<!--    <dubbo:reference id="helloServiceImpl" interface="com.tomgao.api.HelloService"/>-->
 </beans>

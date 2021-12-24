@@ -7,12 +7,12 @@
         ">
 
 <!--   为 dubbo 服务命名 -->
-    <dubbo:application name="dubbo-provider"/>
-<!--    把服务注册到注册中心-->
-    <dubbo:registry address="zookeeper://127.0.0.1:2181" protocol="zookeeper"/>
-<!--    暴露服务的协议-->
-    <dubbo:protocol name="dubbo" port="20880"/>
+<!--    <dubbo:application name="dubbo-provider"/>-->
+<!--&lt;!&ndash;    把服务注册到注册中心&ndash;&gt;-->
+<!--    <dubbo:registry address="zookeeper://127.0.0.1:2181" protocol="zookeeper"/>-->
+<!--&lt;!&ndash;    暴露服务的协议&ndash;&gt;-->
+<!--    <dubbo:protocol name="dubbo" port="20880"/>-->
 
-<!--    配置 dubbo provider 服务-->
-    <dubbo:service interface="com.tomgao.api.HelloService" ref="helloServiceImpl"/>
+<!--&lt;!&ndash;    配置 dubbo provider 服务&ndash;&gt;-->
+<!--    <dubbo:service interface="com.tomgao.api.HelloService" ref="helloServiceImpl"/>-->
 </beans>
