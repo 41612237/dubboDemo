@@ -12,7 +12,7 @@ import java.util.concurrent.Future;
  * @Description
  * @date 2021/12/20
  */
-@Service(timeout = 10000)
+//@Service(timeout = 10000)
 @org.springframework.stereotype.Service
 public class AsyncServiceImpl implements AsyncService {
     @Override
@@ -23,7 +23,7 @@ public class AsyncServiceImpl implements AsyncService {
             System.out.println(context.getAttachment("key1"));
 
             try {
-                Thread.sleep(5000);
+                Thread.sleep(3000);
             } catch (Exception e) {
                 e.printStackTrace();
             }

@@ -16,7 +16,7 @@ import java.util.concurrent.ConcurrentHashMap;
  * @Description
  * @date 2021/12/14
  */
-@Service(connections = 1, callbacks = 1000)
+//@Service(connections = 1, callbacks = 1000)
 @org.springframework.stereotype.Service
 public class CallbackServiceImpl implements CallbackService {
 

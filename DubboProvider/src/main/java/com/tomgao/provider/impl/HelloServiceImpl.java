@@ -28,11 +28,11 @@ public class HelloServiceImpl implements HelloService {
             System.out.println(savedContext.getAttachment("consumer-key1"));
             try {
                 System.out.println("异步执行 byeDubbo 中.....");
-//                Thread.sleep(1000);
+                Thread.sleep(1000);
             } catch (Exception e) {
                 e.printStackTrace();
             }
-            return "async response from provider";
+            return "生产者返回的字符串";
         });
     }
 }

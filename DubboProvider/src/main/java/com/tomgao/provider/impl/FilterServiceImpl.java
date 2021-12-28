@@ -14,6 +14,7 @@ public class FilterServiceImpl implements FilterService {
 
     @Override
     public String filterTest() {
+        System.out.println("filterService");
         return "run filterService";
     }
 }

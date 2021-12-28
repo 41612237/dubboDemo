@@ -37,10 +37,10 @@ public class HelloController {
             if (t != null) {
                 t.printStackTrace();
             } else {
-                System.out.println("Response: " + v);
+                System.out.println("provider 返回值: " + v);
             }
         });
 
-        System.out.println("Executed before response return.");
+        System.out.println("消费者调用结束");
     }
 }
